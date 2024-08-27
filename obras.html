@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obras de Leonardo da Vinci</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        header {
+            grid-column: span 12;
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .menu {
+            grid-column: span 12;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background-color: #34495e;
+            padding: 10px 0;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        .menu ul li {
+            margin: 0;
+        }
+
+        .menu ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .menu ul li a:hover {
+            background-color: #2c3e50;
+        }
+
+        .imagem_leo {
+            grid-column: span 3;
+            text-align: center;
+        }
+
+        .imagem_leo img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .infos {
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .principal {
+            grid-column: span 9;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .card {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .img {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 10px;
+            background-color: #ecf0f1;
+            text-align: center;
+            flex: 1 1 calc(33.333% - 20px);
+            box-sizing: border-box;
+        }
+
+        .img img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        footer {
+            grid-column: span 12;
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+
+        @media only screen and (max-width: 767px) {
+            .imagem_leo,
+            .principal {
+                grid-column: span 12;
+            }
+
+            .img {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Obras de Leonardo da Vinci</h1>
+    </header>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Biografia</a></li>
+            <li><a href="obras.html">Obras</a></li>
+            <li><a href="curiosidades.html">Curiosidades</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <aside class="imagem_leo">
+            <img src="leonardo-da-vinci.png" alt="Leonardo da Vinci">
+            <div class="infos">
+                <p><strong>Ocupação:</strong> Pintor italiano</p>
+                <p><strong>Data do Nascimento:</strong> 15/04/1452</p>
+                <p><strong>Data da Morte:</strong> 02/05/1519 (aos 67 anos)</p>
+            </div>
+        </aside>
+        <section class="principal">
+            <h1>Obras</h1>
+            <div class="card">
+                <div class="img">
+                    <img src="mona-lisa.png" alt="Mona Lisa">
+                    <div>
+                        <h2>Mona Lisa</h2>
+                        <p>Museu do Louvre</p>
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="salvator-mundi.png" alt="Salvator Mundi">
+                    <div>
+                        <h2>Salvator Mundi</h2>
+                        <p>Localização desconhecida</p>
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="a-ultima-ceia.png" alt="A Última Ceia">
+                    <div>
+                        <h2>A Última Ceia</h2>
+                        <p>Convento de Santa Maria delle Grazie</p>
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="vitruvian-man.png" alt="Homem Vitruviano">
+                    <div>
+                        <h2>Homem Vitruviano</h2>
+                        <p>Gallerie dell'Accademia</p>
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="anunciacao.png" alt="A Anunciação">
+                    <div>
+                        <h2>A Anunciação</h2>
+                        <p>Galeria Uffizi</p>
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="dona-arminho.png" alt="Dama com Arminho">
+                    <div>
+                        <h2>Dama com Arminho</h2>
+                        <p>Museu Czartoryski</p>
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="retrato-de-ginevra-de-benci.png" alt="Retrato de Ginevra">
+                    <div>
+                        <h2>Retrato de Ginevra</h2>
+                        <p>Galeria Nacional de Arte</p>
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="a-virgem-e-o-menino-com-santa-ana.png" alt="A Virgem e o Menino com Santa Ana">
+                    <div>
+                        <h2>A Virgem e o Menino com Santa Ana</h2>
+                        <p>Museu do Louvre</p>
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="virgem-das-rochas.png" alt="A Virgem das Rochas">
+                    <div>
+                        <h2>A Virgem das Rochas</h2>
+                        <p>Museu do Louvre</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>© 2024 Obras de Leonardo da Vinci</p>
+    </footer>
+</body>
+
+</html>
+
+
+

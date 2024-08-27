@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Biografia de Leonardo da Vinci, um dos maiores gênios da história.">
+    <meta name="keywords" content="Leonardo da Vinci, biografia, arte, ciência, Renascimento">
+    <title>Biografia Leonardo da Vinci</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        header {
+            grid-column: span 12;
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu {
+            grid-column: span 12;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background-color: #34495e;
+            padding: 10px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        .menu ul li {
+            margin: 0;
+        }
+
+        .menu ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .menu ul li a:hover {
+            background-color: #2c3e50;
+        }
+
+        .banner {
+            grid-column: span 12;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .banner img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .imagem_leo {
+            grid-column: span 3;
+            text-align: center;
+        }
+
+        .imagem_leo img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .infos {
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .principal {
+            grid-column: span 9;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .citacoes {
+            grid-column: span 12;
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .citacoes p {
+            font-style: italic;
+            color: #2c3e50;
+        }
+
+        footer {
+            grid-column: span 12;
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        @media only screen and (max-width: 767px) {
+            .imagem_leo,
+            .principal {
+                grid-column: span 12;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Biografia Leonardo da Vinci</h1>
+    </header>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Biografia</a></li>
+            <li><a href="obras.html">Obras</a></li>
+            <li><a href="curiosidades.html">Curiosidades</a></li>
+        </ul>
+    </nav>
+    <div class="banner">
+        <img src="ceia.jpg" alt="Retrato presumido de Leonardo da Vinci">
+    </div>
+    <div class="container">
+        <aside class="imagem_leo">
+            <img src="leonardo-da-vinci.png" alt="Imagem de Leonardo da Vinci">
+            <div class="infos">
+                <p><strong>Ocupação:</strong> Pintor italiano</p>
+                <p><strong>Data do Nascimento:</strong> 15/04/1452</p>
+                <p><strong>Data da Morte:</strong> 02/05/1519 (aos 67 anos)</p>
+            </div>
+        </aside>
+        <section class="principal">
+            <h1>Leonardo da Vinci - Biografia</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque leo nec urna fermentum, a tincidunt nisi facilisis. Integer nec libero nec nulla facilisis tincidunt. Sed sit amet sapien nec sapien vehicula fermentum. Nulla facilisi. Donec vel libero at lectus tincidunt tincidunt. Integer nec libero nec nulla facilisis tincidunt. Sed sit amet sapien nec sapien vehicula fermentum. Nulla facilisi. Donec vel libero at lectus tincidunt tincidunt.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque leo nec urna fermentum, a tincidunt nisi facilisis. Integer nec libero nec nulla facilisis tincidunt. Sed sit amet sapien nec sapien vehicula fermentum. Nulla facilisi. Donec vel libero at lectus tincidunt tincidunt. Integer nec libero nec nulla facilisis tincidunt. Sed sit amet sapien nec sapien vehicula fermentum. Nulla facilisi. Donec vel libero at lectus tincidunt tincidunt.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque leo nec urna fermentum, a tincidunt nisi facilisis. Integer nec libero nec nulla facilisis tincidunt. Sed sit amet sapien nec sapien vehicula fermentum. Nulla facilisi. Donec vel libero at lectus tincidunt tincidunt. Integer nec libero nec nulla facilisis tincidunt. Sed sit amet sapien nec sapien vehicula fermentum. Nulla facilisi. Donec vel libero at lectus tincidunt tincidunt.</p>
+        </section>
+        <section class="citacoes">
+            <h2>Citações Famosas</h2>
+            <p>"A simplicidade é o último grau de sofisticação."</p>
+            <p>"A arte diz o indizível; exprime o inexprimível, traduz o intraduzível."</p>
+            <p>"O conhecimento é filho da experiência."</p>
+        </section>
+    </div>
+    <footer>
+        <p>Desenvolvido para fins educacionais</p>
+    </footer>
+</body>
+
+</html>
+
+
